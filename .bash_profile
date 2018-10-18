@@ -11,3 +11,8 @@ POWERLINE_BASH_SELECT=1
 # Enable coloured output:
 # =========================
 export CLICOLOR=1
+
+# ============================
+# Enable Git auto-comletion:
+# ============================
+source ~/.dotfiles/.git-completion.bash
