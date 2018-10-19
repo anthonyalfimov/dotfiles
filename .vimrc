@@ -21,7 +21,12 @@ set nocompatible
 "==============================================================================
 "   Basic UI
 "==============================================================================
+
+" !!!
+" this line causes problens with fugitive git branch in airline:
 syntax on               " enable syntax highlighting
+" !!!
+
 set showcmd             " show partial commands in the last line of the screen
 "==============================================================================
 set number              " show line numbers
