@@ -1,8 +1,13 @@
 # bash/zsh completion support for core Git version 2.17.1
 #
+# Original file:
 # Copyright (C) 2006,2007 Shawn O. Pearce <spearce@spearce.org>
 # Conceptually based on gitcompletion (http://gitweb.hawaga.org.uk/).
 # Distributed under the GNU General Public License, version 2.0.
+# Available at:
+# https://raw.githubusercontent.com/git/git/v2.17.1/contrib/completion/git-completion.bash
+#
+# Modified by: Anthony Alfimov
 #
 # The contained completion routines provide support for completing:
 #
