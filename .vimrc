@@ -94,9 +94,6 @@ set hlsearch
 "===============================================================================
 "   Mappings
 "===============================================================================
-" Allow backspacing over autoindent, line breaks and start of insert action
-set backspace=indent,eol,start
-
 " ISSUE: Mapping causes Vim to load into replace mode
 " Stop highlighting search results using <ESC> ()
 "nnoremap <silent> <Esc> :nohlsearch<Bar>:echo<CR>
