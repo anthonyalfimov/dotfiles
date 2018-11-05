@@ -33,6 +33,8 @@ set autoread
 syntax on
 " Show partial commands in the last line of the screen
 set showcmd
+" Enable Wild Menu for command line completion
+set wildmenu
 
 " Show line numbers
 set number
@@ -84,7 +86,7 @@ set ignorecase
 set smartcase
 " Search as characters are entered
 set incsearch
-" Highlight search results (<ESC> to stop highlighting)
+" Highlight search results (<???> to stop highlighting)
 set hlsearch
 "===============================================================================
 
@@ -94,18 +96,15 @@ set hlsearch
 "===============================================================================
 " Allow backspacing over autoindent, line breaks and start of insert action
 set backspace=indent,eol,start
-" Stop highlighting search results using <ESC>
-nnoremap <silent> <Esc> :nohlsearch<Bar>:echo<CR>
+
+" ISSUE: Mapping causes Vim to load into replace mode
+" Stop highlighting search results using <ESC> ()
+"nnoremap <silent> <Esc> :nohlsearch<Bar>:echo<CR>
 "===============================================================================
 
 
 "===============================================================================
 "   TODO: Try these out
-"===============================================================================
-" Enable Wild Menu for command line completion
-
-"       set wildmenu
-
 "===============================================================================
 " Instead of failing a command because of unsaved changes, instead raise a
 " dialogue asking if you wish to save changed files.
