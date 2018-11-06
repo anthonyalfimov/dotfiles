@@ -25,7 +25,7 @@ Steps for installation on a clean machine
 
 ---
 
-### Installation guide
+### Installation guide (WIP)
 
 #### 1. Install pip (package manager for Python)
 ```bash
