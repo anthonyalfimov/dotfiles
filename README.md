@@ -13,9 +13,6 @@ Steps for installation on a clean machine
 - Add user info to git config
 - Add global gitignore and gitattributes files from `.dotfiles` to git config
 - Install pip (package manager for Python):
-```bash
-sudo easy_install pip
-```
 - Install Powerline
 - Modify path to Powerline in `.bash_profile`
 - Create symlinks to `.bash_profile` and `.vimrc` in home directory
@@ -25,6 +22,20 @@ sudo easy_install pip
 - Modify Vim-Airline default theme
 - Install Vim-fugitive
 - Set up Xcode Terminal script
+
+---
+
+### Installation guide
+
+#### 1. Install pip (package manager for Python)
+```bash
+sudo easy_install pip
+```
+
+#### 2. Install Powerline
+```bash
+pip install --user powerline-status
+```
 
 ---
 
