@@ -19,7 +19,6 @@ Steps for installation on a clean machine
 - Install powerline-gitstatus
 - Set up powerline-gitstatus and Powerline configs
 - Install Vim-airline
-- Modify Vim-Airline default theme
 - Install Vim-fugitive
 - Set up Xcode Terminal script
 
