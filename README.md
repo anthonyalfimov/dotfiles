@@ -81,5 +81,6 @@ $ pip install --user powerline-status
 ### TO-DO
 - [x] Add installation checklist
 - [ ] Add full installation instructions
+- [ ] Add list of tools and features installed and configured by following the installation guide
 - [ ] Add screenshots
 - [ ] Automate parts of the installation process
