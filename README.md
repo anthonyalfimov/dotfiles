@@ -8,9 +8,9 @@ My minimalistic and gradually expanding set of config files (OS X).
 Steps for installation on a clean machine
 
 - Clone `.dotfiles` to home directory
-- Install [Hack font](https://sourcefoundry.org/hack/)
+- Install Powerline-compatible font
 - Install Xcode
-- Add user info to git config
+- Set user name and email for Git
 - Add global gitignore and gitattributes files from `.dotfiles` to git config
 - Install pip (package manager for Python):
 - Install Powerline
@@ -26,14 +26,31 @@ Steps for installation on a clean machine
 
 ### Installation guide (WIP)
 
-#### 1. Install pip (package manager for Python)
-```bash
-sudo easy_install pip
+#### 1. Clone `.dotfiles` to home directory
+```git
+$ git clone https://github.com/anthonyalfimov/dotfiles.git ~/.dotfiles
 ```
 
-#### 2. Install Powerline
+#### 2. Install Powerline-compatible font
+Download Hack font [here](https://sourcefoundry.org/hack/).
+
+#### 3. Install Xcode
+
+#### 4. Set user name and email for Git
+```git
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+```
+
+
+#### n. Install pip (package manager for Python)
 ```bash
-pip install --user powerline-status
+$ sudo easy_install pip
+```
+
+#### n+1. Install Powerline
+```bash
+$ pip install --user powerline-status
 ```
 
 ---
