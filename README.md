@@ -11,7 +11,8 @@ Steps for installation on a clean machine
 - Install Powerline-compatible font
 - Install Xcode
 - Set user name and email for Git
-- Add global gitignore and gitattributes files from `.dotfiles` to git config
+- Add gitignore.io alias
+- Add global gitignore and gitattributes files from `.dotfiles` to Git config
 - Install pip (package manager for Python):
 - Install Powerline
 - Modify path to Powerline in `.bash_profile`
@@ -27,7 +28,7 @@ Steps for installation on a clean machine
 ### Installation guide (WIP)
 
 #### 1. Clone `.dotfiles` to home directory
-```git
+```
 $ git clone https://github.com/anthonyalfimov/dotfiles.git ~/.dotfiles
 ```
 
@@ -37,25 +38,48 @@ Download Hack font [here](https://sourcefoundry.org/hack/).
 #### 3. Install Xcode
 
 #### 4. Set user name and email for Git
-```git
+```
 $ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
 ```
 
+#### 5. Add gitignore.io alias
+[gitignore.io](https://www.gitignore.io) is an online source for generating `.gitignore` files.
+To make the file generation accessible via command line, register a command alias `ignore` with git:
+```
+$ git config --global alias.ignore '!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi
+```
+To test the alias and print the output run, e.g.:
+```
+$ git ignore macos,xcode
+```
 
-#### n. Install pip (package manager for Python)
-```bash
+#### 6. Add global gitignore and gitattributes files
+Register the global ignore file with Git by running:
+```
+$ git config --global core.excludesfile ~/.dotfiles/.gitignore_global
+```
+Register the global attributes file with Git by running:
+```
+$ git config --global core.excludesfile ~/.dotfiles/.gitattributes_global
+```
+
+#### 7. Install pip (package manager for Python)
+```
 $ sudo easy_install pip
 ```
 
-#### n+1. Install Powerline
-```bash
+#### 8. Install Powerline
+```
 $ pip install --user powerline-status
 ```
+
+*...To be continued...*
 
 ---
 
 ### TO-DO
 - [x] Add installation checklist
 - [ ] Add full installation instructions
+- [ ] Add screenshots
 - [ ] Automate parts of the installation process
