@@ -23,6 +23,6 @@ alias lsa='ls -A'
 export CLICOLOR=1
 
 # ============================
-# Enable Git auto-comletion:
+# Enable Git auto-completion:
 # ============================
 source ~/.dotfiles/git-completion.bash
