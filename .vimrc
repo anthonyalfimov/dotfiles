@@ -23,6 +23,8 @@ set nocompatible
 set lazyredraw
 " Reload file if it was changed outside vim
 set autoread
+" Start scrolling when we're 6 lines away from margins
+set scrolloff=6
 "===============================================================================
 
 
@@ -86,7 +88,7 @@ set ignorecase
 set smartcase
 " Search as characters are entered
 set incsearch
-" Highlight search results (<???> to stop highlighting)
+" Highlight search results (<C-L> to stop highlighting)
 set hlsearch
 "===============================================================================
 
@@ -94,9 +96,12 @@ set hlsearch
 "===============================================================================
 "   Mappings
 "===============================================================================
-" ISSUE: Mapping causes Vim to load into replace mode
-" Stop highlighting search results using <ESC> ()
-"nnoremap <silent> <Esc> :nohlsearch<Bar>:echo<CR>
+" Map <C-L> (redraw screen) to also turn off search highlighting until the
+" next search
+nnoremap <C-L> :nohlsearch<CR><C-L>
+" Map Y to act like D and C, i.e. to yank until EOL, rather than act as yy,
+" which is the default
+map Y y$
 "===============================================================================
 
 
@@ -113,11 +118,6 @@ set hlsearch
 " "press <Enter> to continue"
 
 "       set cmdheight=2
-
-"===============================================================================
-" Start scrolling when we're 8 lines away from margins
-
-"       set scrolloff=8
 
 "===============================================================================
 " Vim with default settings does not allow easy switching between multiple files
