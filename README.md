@@ -55,7 +55,7 @@ To make the file generation accessible via command line, register a command alia
 ```
 $ git config --global alias.ignore '!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi
 ```
-To test the alias and print the output run, e.g.:
+To test the alias and print the output, run, e.g.:
 ```
 $ git ignore macos,xcode
 ```
