@@ -24,14 +24,12 @@ Steps for installation on a clean machine:
 3. Set user name and email for Git
 4. Add gitignore.io alias
 5. Add global gitignore and gitattributes files from `.dotfiles` to Git config
-6. Install pip (package manager for Python):
-7. Install Powerline
-8. Modify path to Powerline in `.bash_profile`
-9. Create symlinks to `.bash_profile` and `.vimrc` in home directory
-10. Install powerline-gitstatus
-11. Setup powerline-gitstatus and Powerline configs
-12. Install Vim plugins (vim-airline, vim-fugitive)
-13. Set up Xcode Terminal script
+6. Install Powerline
+7. Create symlinks to `.bash_profile` and `.vimrc` in home directory
+8. Install powerline-gitstatus
+9. Setup powerline-gitstatus and Powerline configs
+10. Install Vim plugins (vim-airline, vim-fugitive)
+11. Set up Xcode Terminal script
 
 ---
 
@@ -72,15 +70,39 @@ Register the global attributes file with Git by running:
 $ git config --global core.excludesfile ~/.dotfiles/.gitattributes_global
 ```
 
-#### 6. Install pip (package manager for Python)
+#### 6. Install Powerline
+First, install *pip* - a package manager for Python - by running:
 ```
 $ sudo easy_install pip
 ```
 
-#### 7. Install Powerline
+Next, install *Powerline*:
+
 ```
 $ pip install --user powerline-status
 ```
+
+To find the location of *Powerline* run:
+```
+$ pip show powerline-status
+```
+and copy the path from the `Location:` field.
+
+Now, open the `~/.dotfiles/.bash_profile` file. In the last line of
+`Enable Powerline` section, replace the `/.../site-packages` part of the path
+with the one you copied.
+
+#### 7. Create symlinks to `.bash_profile` and `.vimrc` in home directory
+```
+$ cd
+$ ln -s ~/.dotfiles/.bash_profile ~/.bash_profile
+$ ln -s ~/.dotfiles/.vimrc ~/.vimrc
+```
+
+Restart the terminal (or run `$ source ~/.bash_profile`) to enable *Powerline*,
+Git command tab-completion, custom aliases, and coloured output.
+
+---
 
 *...To be continued...*
 
