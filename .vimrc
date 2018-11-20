@@ -24,7 +24,7 @@ set lazyredraw
 " Reload file if it was changed outside vim
 set autoread
 " Start scrolling when we're 6 lines away from margins
-set scrolloff=6
+set scrolloff=5
 "===============================================================================
 
 
