@@ -36,7 +36,7 @@ Steps for installation on a clean machine:
 ## Installation guide (WIP)
 
 Before proceeding, make sure that you have Xcode or XCode Command Line Tools installed.
-To install the Command Line Tools only, run `xcode-select --install`.
+To install the Command Line Tools only, run `$ xcode-select --install`.
 
 ### 1. Clone `.dotfiles` to home directory
 ```
