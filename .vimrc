@@ -94,6 +94,20 @@ set hlsearch
 
 
 "===============================================================================
+"   Spellchecking
+"===============================================================================
+" Set language to English (all regions)
+set spelllang=en
+" Set path to Spellfile (for dictionary additions)
+set spellfile=~/.dotfiles/vim/en.utf-8.add
+
+" Clear default spellcheck highlight
+highlight clear SpellBad
+" Set spellcheck highlighting to underline and bold
+highlight SpellBad cterm=bold ctermbg=red ctermfg=white
+"===============================================================================
+
+"===============================================================================
 "   Mappings
 "===============================================================================
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
