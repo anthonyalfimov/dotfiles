@@ -99,7 +99,7 @@ with the one you copied.
 ```
 $ cd
 $ ln -s ~/.dotfiles/.bash_profile ~/.bash_profile
-$ ln -s ~/.dotfiles/.vimrc ~/.vimrc
+$ ln -s ~/.dotfiles/vim/.vimrc ~/.vimrc
 ```
 
 Restart the terminal (or run `$ source ~/.bash_profile`) to enable *Powerline*,
