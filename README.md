@@ -25,11 +25,10 @@ Steps for installation on a clean machine:
 4. Add gitignore.io alias
 5. Add global gitignore and gitattributes files from `.dotfiles` to Git config
 6. Install Powerline
-7. Create symlinks to `.bash_profile` and `.vimrc` in home directory
-8. Install powerline-gitstatus
-9. Setup powerline-gitstatus and Powerline configs
-10. Install Vim plugins (vim-airline, vim-fugitive)
-11. Set up Xcode Terminal script
+7. Install Vim plugins (vim-airline, vim-fugitive)
+8. Create symlinks to `.bash_profile` and `.vimrc` in home directory
+9. Install powerline-gitstatus
+10. Set up Xcode Terminal script
 
 ---
 
@@ -95,7 +94,12 @@ Now, open the `~/.dotfiles/.bash_profile` file. In the last line of
 `Enable Powerline` section, replace the `/.../site-packages` part of the path
 with the one you copied.
 
-### 7. Create symlinks to `.bash_profile` and `.vimrc` in home directory
+### 7. Install Vim plugins
+Install [vim-airline](https://github.com/vim-airline/vim-airline) and
+[vim-fugitive](https://github.com/tpope/vim-fugitive) Vim plugins for a
+statusline with Git status.
+
+### 8. Create symlinks to `.bash_profile` and `.vimrc` in home directory
 ```
 $ cd
 $ ln -s ~/.dotfiles/.bash_profile ~/.bash_profile
