@@ -103,7 +103,7 @@ set spellfile=~/.dotfiles/vim/en.utf-8.add
 
 " Clear default spellcheck highlight
 highlight clear SpellBad
-" Set spellcheck highlighting to underline and bold
+" Set spellcheck highlighting to bold white text on red background
 highlight SpellBad cterm=bold ctermbg=red ctermfg=white
 "===============================================================================
 
