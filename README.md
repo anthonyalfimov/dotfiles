@@ -17,7 +17,7 @@ folder for current project
 - Basic `.vimrc` and Vim plugins
 
 ![powerline](https://user-images.githubusercontent.com/43878921/49591463-96be0b00-f97f-11e8-9f42-47cf4c5e605c.png)
-![vim](https://user-images.githubusercontent.com/43878921/49591496-a8071780-f97f-11e8-860c-ab1226e2acf3.png)
+![vim](https://user-images.githubusercontent.com/43878921/49591803-84909c80-f980-11e8-9c5d-04e49a495186.png)
 
 ---
 
