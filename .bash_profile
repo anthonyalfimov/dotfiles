@@ -7,6 +7,11 @@ POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
 . /Users/anton/Library/Python/2.7/lib/python/site-packages/powerline/bindings/bash/powerline.sh
 
+# =====================================
+# Enable Ruby gems in home directory:
+# =====================================
+export PATH=$PATH:$HOME/.gem/ruby/2.3.0/bin
+
 # ==========
 # Aliases:
 # ==========
