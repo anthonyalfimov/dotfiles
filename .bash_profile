@@ -31,3 +31,8 @@ export CLICOLOR=1
 # Enable Git auto-completion:
 # ============================
 source ~/.dotfiles/git-completion.bash
+
+# ===============
+# Enable CMake:
+# ===============
+export PATH=$PATH:/Applications/Utilities/CMake.app/Contents/bin
