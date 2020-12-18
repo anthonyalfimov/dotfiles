@@ -1,4 +1,4 @@
-# bash/zsh completion support for core Git.
+# bash/zsh completion support for core Git version 2.24.3.
 #
 # Copyright (C) 2006,2007 Shawn O. Pearce <spearce@spearce.org>
 # Conceptually based on gitcompletion (http://gitweb.hawaga.org.uk/).
