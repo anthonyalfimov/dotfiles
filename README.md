@@ -51,7 +51,7 @@ Download Hack font [here](https://sourcefoundry.org/hack/).
 [gitignore.io](https://www.gitignore.io) is an online source for generating `.gitignore` files.
 To make the file generation accessible via command line, register a command alias `ignore` with git:
 ```
-$ git config --global alias.ignore '!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi
+$ git config --global alias.ignore '!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi'
 ```
 To test the alias and print the output, run, e.g.:
 ```
