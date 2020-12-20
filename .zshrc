@@ -1,18 +1,15 @@
+#-------------------------------------#
+# Configuration for interactive usage #
+#-------------------------------------#
+
 # ===================
 # Enable Powerline:
 # ===================
-export PATH=$PATH:$HOME/Library/Python/2.7/bin
 . /Users/anthony/Library/Python/2.7/lib/python/site-packages/powerline/bindings/bash/powerline.sh
-
-# =====================================
-# Enable Ruby gems in home directory:
-# =====================================
-#export PATH=$PATH:$HOME/.gem/ruby/2.3.0/bin
 
 # ==========
 # Aliases:
 # ==========
-
 # long list command with units for file sizes, showing all files
 alias ll='ls -lhA'
 
@@ -28,8 +25,3 @@ export CLICOLOR=1
 # Enable Git auto-completion:
 # ============================
 source ~/.dotfiles/git-completion.bash
-
-# ===============
-# Enable CMake:
-# ===============
-#export PATH=$PATH:/Applications/Utilities/CMake.app/Contents/bin
