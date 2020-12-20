@@ -5,7 +5,7 @@
 # ===================
 # Enable Powerline:
 # ===================
-. /Users/anthony/Library/Python/2.7/lib/python/site-packages/powerline/bindings/bash/powerline.sh
+. /Users/anthony/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh
 
 # ==========
 # Aliases:
