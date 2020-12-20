@@ -10,7 +10,7 @@ POWERLINE_BASH_SELECT=1
 # =====================================
 # Enable Ruby gems in home directory:
 # =====================================
-export PATH=$PATH:$HOME/.gem/ruby/2.3.0/bin
+#export PATH=$PATH:$HOME/.gem/ruby/2.3.0/bin
 
 # ==========
 # Aliases:
