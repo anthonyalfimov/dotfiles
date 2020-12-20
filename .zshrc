@@ -24,4 +24,4 @@ export CLICOLOR=1
 # ============================
 # Enable Git auto-completion:
 # ============================
-source ~/.dotfiles/git-completion.bash
+#source ~/.dotfiles/git-completion.bash
