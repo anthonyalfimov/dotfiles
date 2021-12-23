@@ -1,14 +1,14 @@
 # .dotfiles
 
-My minimalistic and gradually expanding set of config files (OS X).
+My minimalistic and gradually expanding set of config files (OS X, zsh).
 
 ---
 
 ## Contents
 These configs together with the [installation guide](#installation-guide)
 allow to set up:
-- Basic `.bash_profile`
-- Powerline with powerline-gitstatus for bash
+- Basic `.zshrc` and `.zshenv`
+- Powerline with powerline-gitstatus for zsh
 - Git command auto-completion
 - Global `.gitignore` and `.gitattributes` files
 - `.gitignore` generation from [gitignore.io](https://www.gitignore.io)
@@ -28,7 +28,7 @@ folder for current project
 4. [Add global gitignore and gitattributes files](#4-add-global-gitignore-and-gitattributes-files)
 5. [Install Powerline](#5-install-powerline)
 6. [Install Vim plugins](#6-install-vim-plugins)
-7. [Create symlinks to `.bash_profile` and `.vimrc`](#7-create-symlinks-to-bash_profile-and-vimrc-in-home-directory)
+7. [Create symlinks to `.zshenc`, `.zshrc`, and `.vimrc`](#7-create-symlinks-to-zshenv-zshrc-and-vimrc-in-home-directory)
 8. [Install powerline-gitstatus](#8-install-powerline-gitstatus)
 9. [Set up Xcode "Open in Terminal" command](#9-set-up-xcode-open-in-terminal-command)
 
@@ -86,7 +86,7 @@ $ pip show powerline-status
 ```
 and copy the path from the `Location:` field, e.g `/Users/<user>/Library/Python/2.7/lib/python/site-packages`.
 
-Now, open the `~/.dotfiles/.bash_profile` file. In the last line of
+Now, open the `~/.dotfiles/.zshrc` file. In the last line of
 `Enable Powerline` section, replace the `/.../site-packages` part of the path
 with the one you copied.
 
@@ -95,15 +95,15 @@ Install [vim-airline](https://github.com/vim-airline/vim-airline) and
 [vim-fugitive](https://github.com/tpope/vim-fugitive) Vim plugins for a
 statusline with Git status (fast and written in Vim script).
 
-### 7. Create symlinks to `.bash_profile` and `.vimrc` in home directory
+### 7. Create symlinks to `.zshenv`, `.zshrc`, and `.vimrc` in home directory
 ```
 $ cd
-$ ln -s ~/.dotfiles/.bash_profile ~/.bash_profile
+$ ln -s ~/.dotfiles/.zshenv ~/.zshenv
+$ ln -s ~/.dotfiles/.zshrc ~/.zshrc
 $ ln -s ~/.dotfiles/vim/.vimrc ~/.vimrc
 ```
 
-Restart the terminal (or run `$ source ~/.bash_profile`) to enable Powerline,
-Git command tab-completion, custom aliases, and coloured output.
+Restart the terminal to enable Powerline, Git command tab-completion, custom aliases, and coloured output.
 
 ### 8. Install powerline-gitstatus
 In order to add Git information to the Powerline prompt, install [Gitstatus](https://github.com/jaspernbrouwer/powerline-gitstatus)
