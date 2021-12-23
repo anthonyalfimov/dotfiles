@@ -31,6 +31,8 @@ set scrolloff=5
 "===============================================================================
 "   Basic UI
 "===============================================================================
+" Set colourscheme
+colorscheme default
 " Enable syntax highlighting
 syntax on
 " Show partial commands in the last line of the screen
@@ -47,6 +49,8 @@ highlight LineNr ctermfg=darkgrey
 set cursorline
 " Disable highlight of cursor line itself (only line number is highlighted)
 highlight CursorLine cterm=NONE
+" Set the highlight style for the line number (only colour)
+highlight CursorLineNR cterm=NONE
 "===============================================================================
 
 
