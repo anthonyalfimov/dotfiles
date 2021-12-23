@@ -1,6 +1,6 @@
 # .dotfiles
 
-My minimalistic and gradually expanding set of config files (OS X, zsh).
+My minimalistic and gradually expanding set of config files (macOS, zsh).
 
 ---
 
