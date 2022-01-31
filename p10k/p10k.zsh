@@ -406,16 +406,16 @@
 
       # Tag name is displayed in sqare brackets
       if [[ -n $VCS_STATUS_LOCAL_BRANCH ]]; then
-        # Leave a space before the tag name if on a branch
+        # Omit "detached HEAD" glyph when on a branch
         res+="${tag_fg} [${tag//\%/%%}]"
       else
-        res+="${detached_fg}[${tag//\%/%%}]"
+        res+="${detached_fg}⋄ [${tag//\%/%%}]"
       fi
     fi
 
     # Display the current Git commit if there is no branch and no tag.
     if [[ -z $VCS_STATUS_LOCAL_BRANCH && -z $VCS_STATUS_TAG ]]; then
-      res+="${detached_fg}${VCS_STATUS_COMMIT[1,8]}"
+      res+="${detached_fg}⋄ ${VCS_STATUS_COMMIT[1,8]}"
     fi
 
     # Show tracking branch name if it differs from local branch.
