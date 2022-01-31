@@ -124,13 +124,13 @@
 
   # Connect left prompt lines with these symbols. You'll probably want to use the same color
   # as POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_FOREGROUND below.
-  typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX='%242F╭─'
-  typeset -g POWERLEVEL9K_MULTILINE_NEWLINE_PROMPT_PREFIX='%242F├─'
-  typeset -g POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX='%242F╰─'
+  # typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX='%242F╭─'
+  # typeset -g POWERLEVEL9K_MULTILINE_NEWLINE_PROMPT_PREFIX='%242F├─'
+  # typeset -g POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX='%242F╰─'
   # Connect right prompt lines with these symbols.
-  typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_SUFFIX='%242F─╮'
-  typeset -g POWERLEVEL9K_MULTILINE_NEWLINE_PROMPT_SUFFIX='%242F─┤'
-  typeset -g POWERLEVEL9K_MULTILINE_LAST_PROMPT_SUFFIX='%242F─╯'
+  # typeset -g POWERLEVEL9K_MULTILINE_FIRST_PROMPT_SUFFIX='%242F─╮'
+  # typeset -g POWERLEVEL9K_MULTILINE_NEWLINE_PROMPT_SUFFIX='%242F─┤'
+  # typeset -g POWERLEVEL9K_MULTILINE_LAST_PROMPT_SUFFIX='%242F─╯'
 
   # Filler between left and right prompt on the first prompt line. You can set it to ' ', '·' or
   # '─'. The last two make it easier to see the alignment between left and right prompt and to
@@ -428,25 +428,25 @@
       res+=" ${stashed_fg}wip"
     fi
 
-    # ⇣42 if behind the remote.
+    # "↓ 42" if behind the remote.
     (( VCS_STATUS_COMMITS_BEHIND )) && res+=" ${accent_fg}↓ ${VCS_STATUS_COMMITS_BEHIND}"
-    # ⇡42 if ahead of the remote.
+    # "↑ 42" if ahead of the remote.
     (( VCS_STATUS_COMMITS_AHEAD  )) && res+=" ${accent_fg}↑ ${VCS_STATUS_COMMITS_AHEAD}"
-    # ⇠42 if behind the push remote.
-    (( VCS_STATUS_PUSH_COMMITS_BEHIND )) && res+=" ${accent_fg}← ${VCS_STATUS_PUSH_COMMITS_BEHIND}"
-    # ⇢42 if ahead of the push remote; no leading space if also behind: ⇠42⇢42.
-    (( VCS_STATUS_PUSH_COMMITS_AHEAD  )) && res+=" ${accent_fg}→ ${VCS_STATUS_PUSH_COMMITS_AHEAD}"
-    # *42 if have stashes.
+    # "↙ 42" if behind the push remote.
+    (( VCS_STATUS_PUSH_COMMITS_BEHIND )) && res+=" ${accent_fg}↙ ${VCS_STATUS_PUSH_COMMITS_BEHIND}"
+    # "↗ 42" if ahead of the push remote.
+    (( VCS_STATUS_PUSH_COMMITS_AHEAD  )) && res+=" ${accent_fg}↗ ${VCS_STATUS_PUSH_COMMITS_AHEAD}"
+    # "⚑ 42" if have stashes.
     (( VCS_STATUS_STASHES        )) && res+=" ${stashed_fg}⚑ ${VCS_STATUS_STASHES}"
-    # 'merge' if the repo is in an unusual state.
+    # "merge" if the repo is in an unusual state.
     [[ -n $VCS_STATUS_ACTION     ]] && res+=" ${conflicted_fg}${VCS_STATUS_ACTION}"
-    # ~42 if have merge conflicts.
+    # "✖ 42" if have merge conflicts.
     (( VCS_STATUS_NUM_CONFLICTED )) && res+=" ${conflicted_fg}✖ ${VCS_STATUS_NUM_CONFLICTED}"
-    # +42 if have staged changes.
+    # "● 42" if have staged changes.
     (( VCS_STATUS_NUM_STAGED     )) && res+=" ${staged_fg}● ${VCS_STATUS_NUM_STAGED}"
-    # !42 if have unstaged changes.
+    # "✚ 42" if have unstaged changes.
     (( VCS_STATUS_NUM_UNSTAGED   )) && res+=" ${modified_fg}✚ ${VCS_STATUS_NUM_UNSTAGED}"
-    # ?42 if have untracked files. It's really a question mark, your font isn't broken.
+    # "… 42" if have untracked files. It's really a question mark, your font isn't broken.
     # See POWERLEVEL9K_VCS_UNTRACKED_ICON above if you want to use a different icon.
     (( VCS_STATUS_NUM_UNTRACKED  )) && res+=" ${untracked_fg}${(g::)POWERLEVEL9K_VCS_UNTRACKED_ICON}${VCS_STATUS_NUM_UNTRACKED}"
     # "─" if the number of unstaged files is unknown. This can happen due to
