@@ -79,8 +79,8 @@ Install [vim-airline](https://github.com/vim-airline/vim-airline) and
 [vim-fugitive](https://github.com/tpope/vim-fugitive) Vim plugins for a
 statusline with Git status (fast and written in Vim script):
 ```
-git clone --depth 1 https://github.com/vim-airline/vim-airline ~/.vim/pack/dist/start/vim-airline
-git clone --depth 1 https://github.com/tpope/vim-fugitive.git ~/.vim/pack/dist/start/vim-fugitive
+git clone --branch v0.11 --depth 1 https://github.com/vim-airline/vim-airline ~/.vim/pack/dist/start/vim-airline
+git clone --branch v3.6 --depth 1 https://github.com/tpope/vim-fugitive.git ~/.vim/pack/dist/start/vim-fugitive
 ```
 Open Vim and run `:helptags ~/.vim/pack/dist/start/vim-airline/doc` and `:helptags ~/.vim/pack/dist/start/vim-fugitive/doc` to generate help tags.
 
