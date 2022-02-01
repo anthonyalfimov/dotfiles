@@ -114,8 +114,9 @@ The behaviour can also be set to run after every build in "Scheme settings".
 
 ---
 
-## TO-DO
+## TODO:
 - [x] Add description
 - [x] Add full installation instructions
 - [x] Add screenshots
+- [ ] Add custom gruvbox-inspired theme for vim-airline
 - [ ] Automate the installation process
