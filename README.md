@@ -26,10 +26,11 @@ folder for current project
 2. [Install Powerline-compatible font](#2-install-powerline-compatible-font)
 3. [Add gitignore.io alias](#3-add-gitignoreio-alias)
 4. [Add global gitignore and gitattributes files](#4-add-global-gitignore-and-gitattributes-files)
-5. [Install Powerlevel10k](#5-install-powerlevel10k)
-6. [Install Vim plugins](#6-install-vim-plugins)
-7. [Create symlinks to `.zshenc`, `.zshrc`, and `.vimrc`](#7-create-symlinks-to-zshenv-zshrc-and-vimrc-in-home-directory)
-8. [Set up Xcode "Open in Terminal" command](#8-set-up-xcode-open-in-terminal-command)
+5. [Install macOS Terminal theme](#5-install-macos-terminal-theme)
+6. [Install Powerlevel10k](#6-install-powerlevel10k)
+7. [Install Vim plugins](#7-install-vim-plugins)
+8. [Create symlinks to `.zshenc`, `.zshrc`, and `.vimrc`](#8-create-symlinks-to-zshenv-zshrc-and-vimrc-in-home-directory)
+9. [Set up Xcode "Open in Terminal" command](#9-set-up-xcode-open-in-terminal-command)
 
 ---
 
@@ -67,14 +68,21 @@ Register the global attributes file with Git by running:
 git config --global core.excludesfile ~/.dotfiles/.gitattributes_global
 ```
 
-### 5. Install Powerlevel10k
+### 5. Install macOS Terminal theme
+Add a [gruvbox](https://github.com/morhetz/gruvbox)-based profile to your macOS Terminal by running:
+```
+open ~/.dotfiles/terminal/gruvbox_macos.terminal
+```
+Open "Terminal -> Preferences", select "Gruvbox" profile and set it as Default.
+
+### 6. Install Powerlevel10k
 Clone Powerlevel10k to the specified directory:
 ```
 git clone --depth 1 https://github.com/romkatv/powerlevel10k.git ~/.zsh_themes/powerlevel10k
 ```
 All necessary configuration to enable Powerlevel10k is already set up in the supplied `.zshrc`.
 
-### 6. Install Vim plugins
+### 7. Install Vim plugins
 Install [vim-airline](https://github.com/vim-airline/vim-airline) and
 [vim-fugitive](https://github.com/tpope/vim-fugitive) Vim plugins for a
 statusline with Git status (fast and written in Vim script):
@@ -90,7 +98,7 @@ mkdir -p ~/.vim/autoload/airline/themes/
 cp ~/.dotfiles/vim/darkbox.vim ~/.vim/autoload/airline/themes/
 ```
 
-### 7. Create symlinks to `.zshenv`, `.zshrc`, and `.vimrc` in home directory
+### 8. Create symlinks to `.zshenv`, `.zshrc`, and `.vimrc` in home directory
 ```
 cd
 ln -s ~/.dotfiles/.zshenv ~/.zshenv
@@ -100,7 +108,7 @@ ln -s ~/.dotfiles/vim/.vimrc ~/.vimrc
 
 Restart the terminal to enable Powerlevel10k theme, Git command tab-completion, custom aliases, and coloured output.
 
-### 8. Set up Xcode "Open in Terminal" command
+### 9. Set up Xcode "Open in Terminal" command
 First, give the execution permission to the supplied script:
 ```
 chmod +x ~/.dotfiles/open_terminal.sh
@@ -124,5 +132,5 @@ The behaviour can also be set to run after every build in "Scheme settings".
 - [x] Add full installation instructions
 - [x] Add screenshots
 - [x] Add custom gruvbox-inspired theme for vim-airline
-- [ ] Add custom gruvbox-inspired theme for macOS terminal
+- [x] Add custom gruvbox-inspired theme for macOS terminal
 - [ ] Automate the installation process
