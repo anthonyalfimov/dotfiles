@@ -871,15 +871,15 @@
   typeset -g POWERLEVEL9K_CONTEXT_{REMOTE,REMOTE_SUDO}_FOREGROUND=231
   typeset -g POWERLEVEL9K_CONTEXT_{REMOTE,REMOTE_SUDO}_BACKGROUND=96
   # Default context color (no privileges, no SSH).
-  typeset -g POWERLEVEL9K_CONTEXT_FOREGROUND=231  # 230
-  typeset -g POWERLEVEL9K_CONTEXT_BACKGROUND=30   # 30
+  typeset -g POWERLEVEL9K_CONTEXT_FOREGROUND=231
+  typeset -g POWERLEVEL9K_CONTEXT_BACKGROUND=30
 
-  # Context format when running with privileges: bold user.
-  typeset -g POWERLEVEL9K_CONTEXT_ROOT_TEMPLATE='%B%n'
-  # Context format when in SSH without privileges: bold user@hostname.
-  typeset -g POWERLEVEL9K_CONTEXT_{REMOTE,REMOTE_SUDO}_TEMPLATE='%B%n@%m'
-  # Default context format (no privileges, no SSH): bold user.
-  typeset -g POWERLEVEL9K_CONTEXT_TEMPLATE='%B%n'
+  # Context format when running with privileges: <bold> user@hostname #.
+  typeset -g POWERLEVEL9K_CONTEXT_ROOT_TEMPLATE='%B%n@%m %#'
+  # Context format when in SSH without privileges: <bold> user@hostname %/#.
+  typeset -g POWERLEVEL9K_CONTEXT_{REMOTE,REMOTE_SUDO}_TEMPLATE='%B%n@%m %#'
+  # Default context format (no privileges, no SSH): <bold> user %.
+  typeset -g POWERLEVEL9K_CONTEXT_TEMPLATE='%B%#'
 
   # Don't show context unless running with privileges or in SSH.
   # Tip: Remove the next line to always show context.
