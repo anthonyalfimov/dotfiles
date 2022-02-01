@@ -16,8 +16,8 @@ allow to set up:
 - "Open in Terminal" command for Xcode to open Terminal at the source code
 folder for current project
 
-![powerline](https://user-images.githubusercontent.com/43878921/49591463-96be0b00-f97f-11e8-9f42-47cf4c5e605c.png)
-![vim](https://user-images.githubusercontent.com/43878921/49591987-fcf75d80-f980-11e8-90ed-8ffaf0aadfaa.png)
+![powerline](https://user-images.githubusercontent.com/43878921/152009952-3b5479e3-31ff-4631-84f6-4b97725155f0.png)
+![vim](https://user-images.githubusercontent.com/43878921/152010307-f4581287-42a9-43ee-a463-5a2565003f8c.png)
 
 ---
 
@@ -81,7 +81,6 @@ statusline with Git status (fast and written in Vim script):
 ```
 git clone --depth 1 https://github.com/vim-airline/vim-airline ~/.vim/pack/dist/start/vim-airline
 git clone --depth 1 https://github.com/tpope/vim-fugitive.git ~/.vim/pack/dist/start/vim-fugitive
-
 ```
 Open Vim and run `:helptags ~/.vim/pack/dist/start/vim-airline/doc` and `:helptags ~/.vim/pack/dist/start/vim-fugitive/doc` to generate help tags.
 
