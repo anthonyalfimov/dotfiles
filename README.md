@@ -84,6 +84,12 @@ git clone --branch v3.6 --depth 1 https://github.com/tpope/vim-fugitive.git ~/.v
 ```
 Open Vim and run `:helptags ~/.vim/pack/dist/start/vim-airline/doc` and `:helptags ~/.vim/pack/dist/start/vim-fugitive/doc` to generate help tags.
 
+Install the supplied theme for vim-airline by running:
+```
+mkdir -p ~/.vim/autoload/airline/themes/
+cp ~/.dotfiles/vim/darkbox.vim ~/.vim/autoload/airline/themes/
+```
+
 ### 7. Create symlinks to `.zshenv`, `.zshrc`, and `.vimrc` in home directory
 ```
 cd
@@ -117,5 +123,6 @@ The behaviour can also be set to run after every build in "Scheme settings".
 - [x] Add description
 - [x] Add full installation instructions
 - [x] Add screenshots
-- [ ] Add custom gruvbox-inspired theme for vim-airline
+- [x] Add custom gruvbox-inspired theme for vim-airline
+- [ ] Add custom gruvbox-inspired theme for macOS terminal
 - [ ] Automate the installation process

@@ -57,12 +57,21 @@ highlight CursorLineNR cterm=NONE
 "===============================================================================
 "   Vim Airline
 "===============================================================================
+" Set Airline theme
+let g:airline_theme='darkbox'
 " Use Powerline characters when drawing Airline
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts=1
 " Hide default mode indicator
 set noshowmode
 " Set value for key code delays
 set ttimeoutlen=10
+" Use custom symbols for git status
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+
+let g:airline_symbols.dirty=' ∗'
+let g:airline_symbols.notexists = ' …'
 "===============================================================================
 
 
