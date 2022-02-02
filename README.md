@@ -18,6 +18,7 @@ folder for current project
 
 ![powerline](https://user-images.githubusercontent.com/43878921/152009952-3b5479e3-31ff-4631-84f6-4b97725155f0.png)
 ![vim](https://user-images.githubusercontent.com/43878921/152010307-f4581287-42a9-43ee-a463-5a2565003f8c.png)
+![xcode](https://user-images.githubusercontent.com/43878921/152170148-dde3ce9f-a060-4e92-8c9c-3a05f19e63b4.png)
 
 ---
 
