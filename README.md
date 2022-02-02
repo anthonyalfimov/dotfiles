@@ -30,7 +30,8 @@ folder for current project
 6. [Install Powerlevel10k](#6-install-powerlevel10k)
 7. [Install Vim plugins](#7-install-vim-plugins)
 8. [Create symlinks to `.zshenc`, `.zshrc`, and `.vimrc`](#8-create-symlinks-to-zshenv-zshrc-and-vimrc-in-home-directory)
-9. [Set up Xcode "Open in Terminal" command](#9-set-up-xcode-open-in-terminal-command)
+9. [Install Xcode theme](#9-install-xcode-theme)
+10. [Set up Xcode "Open in Terminal" command](#10-set-up-xcode-open-in-terminal-command)
 
 ---
 
@@ -108,10 +109,17 @@ ln -s ~/.dotfiles/vim/.vimrc ~/.vimrc
 
 Restart the terminal to enable Powerlevel10k theme, Git command tab-completion, custom aliases, and coloured output.
 
-### 9. Set up Xcode "Open in Terminal" command
+### 9. Install Xcode theme
+The custom "Darkbox" Xcode theme is inspired by the "Classic (Dark)" Xcode theme and the [gruvbox](https://github.com/morhetz/gruvbox) palette. To install the theme, run:
+```
+mkdir -p ~/Library/Developer/Xcode/UserData/FontAndColorThemes
+cp ~/.dotfiles/xcode/Darkbox.xccolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
+```
+
+### 10. Set up Xcode "Open in Terminal" command
 First, give the execution permission to the supplied script:
 ```
-chmod +x ~/.dotfiles/open_terminal.sh
+chmod +x ~/.dotfiles/xcode/open_terminal.sh
 ```
 
 Now, in Xcode, go to “Preferences -> Behaviours” and click the “+” sign to
