@@ -8,11 +8,13 @@ My minimalistic set of config files (macOS, zsh).
 These configs together with the [installation guide](#installation-guide)
 allow to set up:
 - Basic `.zshrc` and `.zshenv`
-- Custom Powerlevel10k theme for zsh inspired by [powerline-gitstatus](https://github.com/jaspernbrouwer/powerline-gitstatus)
 - Git command auto-completion
 - Global `.gitignore` and `.gitattributes` files
 - `.gitignore` generation from [gitignore.io](https://www.gitignore.io)
+- Custom macOS Terminal theme based on [gruvbox](https://github.com/morhetz/gruvbox)
+- Custom Powerlevel10k theme for zsh inspired by [powerline-gitstatus](https://github.com/jaspernbrouwer/powerline-gitstatus)
 - Basic `.vimrc` and Vim plugins
+- Custom Xcode theme
 - "Open in Terminal" command for Xcode to open Terminal at the source code
 folder for current project
 
