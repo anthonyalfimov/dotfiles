@@ -13,7 +13,7 @@ allow to set up:
 - `.gitignore` generation from [gitignore.io](https://www.gitignore.io)
 - Custom macOS Terminal theme based on [gruvbox](https://github.com/morhetz/gruvbox)
 - Custom Powerlevel10k theme for zsh inspired by [powerline-gitstatus](https://github.com/jaspernbrouwer/powerline-gitstatus)
-- Basic `.vimrc` and Vim plugins
+- Basic `.vimrc`, Vim plugins and Vim theme
 - Custom Xcode theme
 - "Open in Terminal" command for Xcode to open Terminal at the source code
 folder for current project
@@ -32,9 +32,10 @@ folder for current project
 5. [Install macOS Terminal theme](#5-install-macos-terminal-theme)
 6. [Install Powerlevel10k](#6-install-powerlevel10k)
 7. [Install Vim plugins](#7-install-vim-plugins)
-8. [Create symlinks to `.zshenc`, `.zshrc`, and `.vimrc`](#8-create-symlinks-to-zshenv-zshrc-and-vimrc-in-home-directory)
-9. [Install Xcode theme](#9-install-xcode-theme)
-10. [Set up Xcode "Open in Terminal" command](#10-set-up-xcode-open-in-terminal-command)
+8. [Install Vim themes](#8-install-vim-themes)
+9. [Create symlinks to `.zshenc`, `.zshrc`, and `.vimrc`](#9-create-symlinks-to-zshenv-zshrc-and-vimrc-in-home-directory)
+10. [Install Xcode theme](#10-install-xcode-theme)
+11. [Set up Xcode "Open in Terminal" command](#11-set-up-xcode-open-in-terminal-command)
 
 ---
 
@@ -96,13 +97,20 @@ git clone --branch v3.6 --depth 1 https://github.com/tpope/vim-fugitive.git ~/.v
 ```
 Open Vim and run `:helptags ~/.vim/pack/dist/start/vim-airline/doc` and `:helptags ~/.vim/pack/dist/start/vim-fugitive/doc` to generate help tags.
 
-Install the supplied theme for vim-airline by running:
+### 8. Install Vim themes
+
+Install the custom "Darkbox" Vim colourscheme by running:
+```sh
+mkdir -p ~/.vim/colors/
+cp ~/.dotfiles/vim/colors/darkbox.vim ~/.vim/colors/
+```
+Install the custom "Darkbox" vim-airline theme by running:
 ```sh
 mkdir -p ~/.vim/autoload/airline/themes/
-cp ~/.dotfiles/vim/darkbox.vim ~/.vim/autoload/airline/themes/
+cp ~/.dotfiles/vim/autoload/airline/themes/darkbox.vim ~/.vim/autoload/airline/themes/
 ```
 
-### 8. Create symlinks to `.zshenv`, `.zshrc`, and `.vimrc` in home directory
+### 9. Create symlinks to `.zshenv`, `.zshrc`, and `.vimrc` in home directory
 ```sh
 cd
 ln -s ~/.dotfiles/.zshenv ~/.zshenv
@@ -112,14 +120,14 @@ ln -s ~/.dotfiles/vim/.vimrc ~/.vimrc
 
 Restart the terminal to enable Powerlevel10k theme, Git command tab-completion, custom aliases, and coloured output.
 
-### 9. Install Xcode theme
+### 10. Install Xcode theme
 The custom "Darkbox" Xcode theme is inspired by the "Classic (Dark)" Xcode theme and the [gruvbox](https://github.com/morhetz/gruvbox) palette. To install the theme, run:
 ```sh
 mkdir -p ~/Library/Developer/Xcode/UserData/FontAndColorThemes
 cp ~/.dotfiles/xcode/Darkbox.xccolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
 ```
 
-### 10. Set up Xcode "Open in Terminal" command
+### 11. Set up Xcode "Open in Terminal" command
 First, give the execution permission to the supplied script:
 ```sh
 chmod +x ~/.dotfiles/xcode/open_terminal.sh

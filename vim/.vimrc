@@ -32,25 +32,17 @@ set scrolloff=5
 "   Basic UI
 "===============================================================================
 " Set colourscheme
-colorscheme default
+colorscheme darkbox
 " Enable syntax highlighting
 syntax on
 " Show partial commands in the last line of the screen
 set showcmd
 " Enable Wild Menu for command line completion
 set wildmenu
-
 " Show line numbers
 set number
-" Set colour of line numbers
-highlight LineNr ctermfg=darkgrey
-
 " Enable highlight of current cursor line
 set cursorline
-" Disable highlight of cursor line itself (only line number is highlighted)
-highlight CursorLine cterm=NONE
-" Set the highlight style for the line number (only colour)
-highlight CursorLineNR cterm=NONE
 "===============================================================================
 
 
