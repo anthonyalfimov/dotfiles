@@ -47,12 +47,12 @@ highlight CursorLineNR      ctermfg=166     cterm=NONE
 "=== markdown ===
 highlight markdownUrl       ctermfg=4
 highlight markdownLinkText  ctermfg=1       cterm=NONE
-highlight markdownH1        ctermfg=3       cterm=bold
-highlight markdownH2        ctermfg=3       cterm=bold
-highlight markdownH3        ctermfg=3       cterm=bold
-highlight markdownH4        ctermfg=3       cterm=NONE
-highlight markdownH5        ctermfg=3       cterm=NONE
-highlight markdownH6        ctermfg=3       cterm=NONE
+highlight markdownH1        ctermfg=10      cterm=bold
+highlight markdownH2        ctermfg=10      cterm=bold
+highlight markdownH3        ctermfg=10      cterm=bold
+highlight markdownH4        ctermfg=10      cterm=NONE
+highlight markdownH5        ctermfg=10      cterm=NONE
+highlight markdownH6        ctermfg=10      cterm=NONE
 
 "=== cpp ===
 highlight cppType ctermfg=5
