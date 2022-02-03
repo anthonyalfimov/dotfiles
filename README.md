@@ -103,7 +103,10 @@ statusline with Git status (fast and written in Vim script):
 git clone --branch v0.11 --depth 1 https://github.com/vim-airline/vim-airline ~/.vim/pack/dist/start/vim-airline
 git clone --branch v3.6 --depth 1 https://github.com/tpope/vim-fugitive.git ~/.vim/pack/dist/start/vim-fugitive
 ```
-Open Vim and run `:helptags ~/.vim/pack/dist/start/vim-airline/doc` and `:helptags ~/.vim/pack/dist/start/vim-fugitive/doc` to generate help tags.
+Generate help tags by running:
+```sh
+vim -c "helptags ~/.vim/pack/dist/start/vim-airline/doc" -c "helptags ~/.vim/pack/dist/start/vim-fugitive/doc" -c q
+```
 
 ### 8. Install Vim themes
 
@@ -120,7 +123,6 @@ cp ~/.dotfiles/vim/autoload/airline/themes/darkbox.vim ~/.vim/autoload/airline/t
 
 ### 9. Create symlinks to `.zshenv`, `.zshrc`, and `.vimrc` in home directory
 ```sh
-cd
 ln -s ~/.dotfiles/.zshenv ~/.zshenv
 ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/vim/.vimrc ~/.vimrc
