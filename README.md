@@ -50,7 +50,15 @@ git clone --depth 1 https://github.com/anthonyalfimov/dotfiles.git ~/.dotfiles
 ```
 
 ### 2. Install Powerline-compatible font
-Download Hack font [here](https://sourcefoundry.org/hack/).
+Download and install Hack font from [here](https://sourcefoundry.org/hack/) or run:
+```sh
+mkdir -p ~/.dotfiles/tmp
+curl -L https://github.com/source-foundry/Hack/releases/download/v3.003/Hack-v3.003-ttf.zip -o ~/.dotfiles/tmp/Hack.zip
+unzip ~/.dotfiles/tmp/Hack -d ~/.dotfiles/tmp/
+mkdir -p ~/Library/Fonts
+cp ~/.dotfiles/tmp/ttf/Hack-*.ttf ~/Library/Fonts/
+rm -rf ~/.dotfiles/tmp
+```
 
 ### 3. Add gitignore.io alias
 [gitignore.io](https://www.gitignore.io) is an online source for generating `.gitignore` files.
