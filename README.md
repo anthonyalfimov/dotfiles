@@ -78,7 +78,7 @@ git config --global core.excludesfile ~/.dotfiles/.gitignore_global
 ```
 Register the global attributes file with Git by running:
 ```sh
-git config --global core.excludesfile ~/.dotfiles/.gitattributes_global
+git config --global core.attributesfile ~/.dotfiles/.gitattributes_global
 ```
 
 ### 5. Install macOS Terminal theme
