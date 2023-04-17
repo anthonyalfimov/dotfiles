@@ -65,7 +65,7 @@ let g:airline#themes#darkbox#palette = {}
 " airline_x/y/z, respectively.
 
 " The darkbox.vim theme:
-let s:airline_a_normal   = [ '282828' , '#b8bb26' , 235  , 142 ]
+let s:airline_a_normal   = [ '#282828' , '#b8bb26' , 235  , 142 ]
 let s:airline_b_normal   = [ '#ffffff' , '#504945' , 255 , 238 ]
 let s:airline_c_normal   = [ '#d7ffd7' , '#202020' , 194 , 234 ]
 let g:airline#themes#darkbox#palette.normal = airline#themes#generate_color_map(s:airline_a_normal, s:airline_b_normal, s:airline_c_normal)
@@ -139,7 +139,7 @@ let g:airline#themes#darkbox#palette.inactive_modified = {
 
 " For commandline mode, we use the colors from normal mode, except the mode
 " indicator should be colored differently, e.g. blue on light green
-let s:airline_a_commandline = [ '282828' , '#8ec07c' , 235  , 108 ]
+let s:airline_a_commandline = [ '#282828' , '#8ec07c' , 235  , 108 ]
 let s:airline_b_commandline = [ '#ffffff' , '#504945' , 255 , 238 ]
 let s:airline_c_commandline = [ '#d7ffd7' , '#202020' , 194 , 234 ]
 let g:airline#themes#darkbox#palette.commandline = airline#themes#generate_color_map(s:airline_a_commandline, s:airline_b_commandline, s:airline_c_commandline)
